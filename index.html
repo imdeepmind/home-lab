@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home • Abhishek Chatterjee | home.imdeepmind.com</title>
+  <meta name="description" content="Personal homepage, service catalog, inboxes, hosted applications, cloud consoles, and GitHub projects for Abhishek Chatterjee (imdeepmind.com).">
+  <meta name="author" content="Abhishek Chatterjee">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link rel="canonical" href="https://home.imdeepmind.com/">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Main Content Wrapper -->
+  <main class="app-container" id="mainContent">
+
+    <!-- Integrated Page Topbar (Brand, Logo, Links & Theme Toggle) -->
+    <header class="page-topbar">
+      <a href="https://imdeepmind.com" class="brand-wrapper" title="Back to imdeepmind.com">
+        <img src="assets/img/logo.png" alt="imdeepmind logo" class="brand-logo" width="42" height="42">
+        <div class="brand-text">
+          <div class="brand-title-row">
+            <span class="brand-name">abhishek chatterjee</span>
+            <span class="brand-badge">home-lab</span>
+          </div>
+          <span class="brand-domain">home.<span class="accent">imdeepmind</span>.com</span>
+        </div>
+      </a>
+
+      <div class="topbar-actions">
+        <a href="https://imdeepmind.com" class="nav-link highlight" target="_blank" rel="noopener noreferrer">
+          <span>imdeepmind</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+
+        <a href="https://github.com/imdeepmind" class="btn-icon" target="_blank" rel="noopener noreferrer" title="GitHub Profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+
+        <button id="themeToggleBtn" class="btn-icon" aria-label="Toggle Theme">
+          <span id="themeIcon"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-glow"></div>
+      <div class="hero-header">
+        <div class="hero-title-row">
+          <div>
+            <h1 class="hero-title">Welcome back, <span>Abhishek</span></h1>
+            <p class="hero-subtitle">Personal dashboard & catalog for inboxes, hosted applications, cloud infrastructure, media, and GitHub projects.</p>
+          </div>
+          <div class="date-badge">
+            <span id="currentDate">Loading date...</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DuckDuckGo Search Bar Widget -->
+      <div class="ddg-search-card" aria-label="Web Search">
+        <form id="ddgForm" action="https://duckduckgo.com/" method="get" target="_blank" class="ddg-form">
+          <div class="ddg-logo-wrap">
+            <svg class="ddg-logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <span class="ddg-label">DuckDuckGo</span>
+          </div>
+          <div class="ddg-input-wrap">
+            <input type="text" id="ddgInput" name="q" class="ddg-input" placeholder="Search the web with DuckDuckGo or type a URL..." autocomplete="off" autofocus>
+          </div>
+          <button type="submit" class="ddg-submit-btn">
+            <span>Search</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </form>
+        <div class="ddg-bangs-row">
+          <span>Quick bangs:</span>
+          <button type="button" class="bang-chip" data-bang="!yt">!yt YouTube</button>
+          <button type="button" class="bang-chip" data-bang="!gh">!gh GitHub</button>
+          <button type="button" class="bang-chip" data-bang="!w">!w Wikipedia</button>
+          <button type="button" class="bang-chip" data-bang="!g">!g Google</button>
+          <button type="button" class="bang-chip" data-bang="!r">!r Reddit</button>
+          <button type="button" class="bang-chip" data-bang="!npm">!npm NPM</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Controls: Filter & Catalog Search -->
+    <section class="controls-bar" aria-label="Catalog Controls">
+      <div class="search-row">
+        <div class="search-box-container">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="searchInput" class="search-input" placeholder="Filter apps, inboxes, cloud services & repos..." aria-label="Filter catalog" autocomplete="off">
+          <span class="search-kbd">/</span>
+          <button id="searchClearBtn" class="search-clear" aria-label="Clear Search">✕</button>
+        </div>
+
+        <div class="view-controls">
+          <button id="gridViewBtn" class="btn-toggle-view active" title="Grid View" aria-label="Grid View">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+          </button>
+          <button id="listViewBtn" class="btn-toggle-view" title="List View" aria-label="List View">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="8" y1="6" x2="21" y2="6"></line>
+              <line x1="8" y1="12" x2="21" y2="12"></line>
+              <line x1="8" y1="18" x2="21" y2="18"></line>
+              <line x1="3" y1="6" x2="3.01" y2="6"></line>
+              <line x1="3" y1="12" x2="3.01" y2="12"></line>
+              <line x1="3" y1="18" x2="3.01" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Categories Pills -->
+      <div class="categories-bar" id="categoriesContainer" role="tablist">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+    </section>
+
+    <!-- Pinned Favorites Shelf -->
+    <section class="services-section" id="pinnedSection" style="display: none;">
+      <div class="section-header">
+        <h2 class="section-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          <span>Pinned Favorites</span>
+        </h2>
+      </div>
+      <div class="services-grid" id="pinnedGrid"></div>
+    </section>
+
+    <!-- Catalog Main Section (Header removed as requested) -->
+    <section class="services-section" id="allServicesSection">
+      <!-- Grid Mode Container -->
+      <div class="services-grid" id="servicesGrid"></div>
+
+      <!-- List/Table Mode Container -->
+      <div id="servicesList" style="display: none;">
+        <table class="services-list-table">
+          <thead>
+            <tr>
+              <th style="width: 40px;">Pin</th>
+              <th>Service</th>
+              <th>Category</th>
+              <th>Tags</th>
+              <th style="text-align: right;">Action</th>
+            </tr>
+          </thead>
+          <tbody id="servicesTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Live GitHub Projects Section -->
+    <section class="services-section" id="projectsSection">
+      <div class="section-header">
+        <h2 class="section-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          <span>GitHub Projects</span>
+          <span id="projectsCount" style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-dim); background: var(--badge-bg); padding: 0.15rem 0.55rem; border-radius: var(--radius-full);">Loading...</span>
+        </h2>
+        <button id="refreshProjectsBtn" class="btn-icon" title="Refresh GitHub Repositories" aria-label="Refresh GitHub Repos">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 4 23 10 17 10"></polyline>
+            <polyline points="1 20 1 14 7 14"></polyline>
+            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="services-grid" id="projectsGrid"></div>
+    </section>
+
+    <!-- Empty State -->
+    <div class="empty-state" id="emptyState" style="display: none;">
+      <div class="empty-icon">🔍</div>
+      <h3 class="empty-title">No matching services or projects</h3>
+      <p class="empty-text">Try adjusting your search query or selecting a different category above.</p>
+    </div>
+
+  </main>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Clean Minimal Footer -->
+  <footer class="footer">
+    <div class="app-container footer-simple">
+      <p>Copyright © 2026 Abhishek Chatterjee • <a href="https://home.imdeepmind.com">home.imdeepmind.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/services-data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
